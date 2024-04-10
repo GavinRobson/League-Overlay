@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="h-[1080px] w-[1920px]">
+      <div class="h-full w-full">
+        <div 
+          style="background-image: url('Images/kindredleaguebackground.webp'); background-position-y: center"
+          class="flex flex-row w-1/2 bg-gray-200 min-h-50 bg-cover">
+          <img src="Images/ImSoBored_Logo_Transparent.png" class="mx-3 my-3" alt="logo" width="60" height="60"/>
+          <div class="flex flex-col space-4 w-full text-2xl font-bold items-center justify-center">
+            <span class="text-blue-600">Wins/Losses</span>
+            <span class="text-white" id="winloss"></span>
+          </div>
+
+          <div class="flex flex-col space-4 w-full text-2xl font-bold items-center justify-center">
+            <span class="text-red-600">Kills/Deaths</span>
+            <span class="text-white" id="killdeath"></span>
+          </div>
+
+          <div class="flex flex-col space-4 w-full text-2xl font-bold items-center justify-center">
+            <span class="text-yellow-600">Total Gold Earned</span>
+            <span class="text-white" id="totalgold"></span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+
+</html>
